@@ -45,6 +45,7 @@ jobs:
           semgrep scan --config auto --error src/
 
 
+
       # ❌ PASSO 5: IMPLEMENTE AQUI — SCA com Grype
       # Dica: instale com "curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin"
       # e rode "grype dir:. --fail-on medium"
