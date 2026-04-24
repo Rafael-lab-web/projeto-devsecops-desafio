@@ -22,8 +22,11 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 - [ ] Deploy com **GitHub Pages**
 
 ## Como a pipeline funciona
-> **Substitua este bloco pela sua explicação após implementar a pipeline.**
-> Descreva cada step, o que ele faz e por que ele é importante para a segurança.
+> Secrets: verifica se tem credenciais visíveis. Ele é importante para evitar que dados confidenciais sejam vazados.
+SAST: busca vulnerabilidades no código-fonte. É importante para detectar falhas ainda no desenvolvimento, reduzindo custo e tempo de correção.
+SCA: Examina bibliotecas e dependências externas usadas no projeto, verificando se possuem vulnerabilidades. É importante porque o ajuda a manter o ecossistema seguro.
+Deploy: garante que só código seguro chegue à produção. É importante por que o deploy é o ponto final do pipeline. Condicionar o deploy à aprovação dos steps de segurança evita que código inseguro seja publicado.
+
 
 ## URL de Produção
-> Adicione aqui o link do GitHub Pages após o deploy.
+> https://rafael-lab-web.github.io/projeto-devsecops-desafio/
